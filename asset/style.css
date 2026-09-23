@@ -1,0 +1,98 @@
+/* Optimized CSS for Sabarish S. Portfolio */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar {
+    background-color: rgba(255, 255, 255, 0.98);
+    box-shadow: 0 1px 5px rgba(0,0,0,0.05);
+}
+.navbar-brand { font-weight: 700; color: #0d6efd; }
+
+/* Hero Section */
+.hero {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #0d6efd 0%, #003d99 100%);
+    color: white;
+    text-align: center;
+}
+.hero h1 { font-size: 3.5rem; text-shadow: 1px 1px 10px rgba(0,0,0,0.1); }
+
+/* Animated Resume Button */
+.btn-resume {
+    background: #ffc107;
+    color: #000;
+    font-weight: 600;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 50px;
+    box-shadow: 0 4px 10px rgba(255, 193, 7, 0.3);
+    transition: 0.3s;
+    animation: floating 3s ease-in-out infinite;
+}
+.btn-resume:hover {
+    background: #e0a800;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 193, 7, 0.5);
+    color: #000;
+}
+@keyframes floating {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-8px); }
+}
+
+/* Section Styling */
+section { padding: 60px 0; }
+.section-title {
+    position: relative;
+    margin-bottom: 30px;
+    font-weight: 700;
+    display: block;
+}
+.section-title::after {
+    content: '';
+    width: 50px;
+    height: 3px;
+    background: #0d6efd;
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+}
+
+/* Skills */
+.skill-badge {
+    background: #f1f4f9;
+    color: #0d6efd;
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin: 5px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    border: 1px solid #dee2e6;
+    transition: 0.3s;
+}
+.skill-badge:hover {
+    background: #0d6efd;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Cards */
+.card {
+    border-radius: 12px;
+    transition: 0.3s ease;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08) !important;
+}
+.bg-soft-primary { background: rgba(13, 110, 253, 0.1); }
+
+
+/* Footer */
+footer .fab, footer .fas { transition: 0.3s; }
+footer a:hover .fab, footer a:hover .fas { transform: scale(1.2); color: #ffc107 !important; }
