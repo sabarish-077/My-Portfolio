@@ -1,4 +1,5 @@
-/* Optimized CSS for Sabarish S. Portfolio */
+/* Custom Portfolio Styles for Sabarish S. */
+
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #ffffff;
@@ -92,7 +93,6 @@ section { padding: 60px 0; }
 }
 .bg-soft-primary { background: rgba(13, 110, 253, 0.1); }
 
-
-/* Footer */
-footer .fab, footer .fas { transition: 0.3s; }
-footer a:hover .fab, footer a:hover .fas { transform: scale(1.2); color: #ffc107 !important; }
+/* Footer Links */
+footer a i { transition: 0.3s; }
+footer a:hover i { transform: scale(1.2); color: #ffc107 !important; }
